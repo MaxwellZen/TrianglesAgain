@@ -18,7 +18,7 @@ public class Tester {
     // System.out.println(tri);
     // System.out.println(tri.classify());
     System.out.println(tri.getPerimeter());
-    // System.out.println(tri.getArea());
+    System.out.println(tri.getArea());
 
 }
 }
