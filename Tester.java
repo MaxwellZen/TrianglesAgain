@@ -15,7 +15,7 @@ public class Tester {
     double x3 = Double.parseDouble(args[4]);
     double y3 = Double.parseDouble(args[5]);
     Triangle tri = new Triangle(x1, y1, x2, y2, x3, y3);
-    // System.out.println(tri);
+    System.out.println(tri);
     System.out.println(tri.classify());
     System.out.println(tri.getPerimeter());
     System.out.println(tri.getArea());

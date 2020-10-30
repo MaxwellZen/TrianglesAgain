@@ -33,4 +33,7 @@ public class Triangle {
     if (a == b || b == c || a == c) return "isosceles";
     return "scalene";
   }
+  public String toString() {
+    return "v1" + v1 + " v2" + v2 + " v3" + v3;
+  }
 }
