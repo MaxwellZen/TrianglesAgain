@@ -36,4 +36,30 @@ public class Triangle {
   public String toString() {
     return "v1" + v1 + " v2" + v2 + " v3" + v3;
   }
+  public void setVertex(int index, Point newP) {
+    if (index==0) v1 = new Point(newP);
+    if (index==1) v2 = new Point(newP);
+    if (index==2) v3 = new Point(newP);
+  }
+  public boolean equals(Triangle other) {
+    if (v1.equals(other.v1)) {
+      if (v2.equals(other.v2)) {
+        return v3.equals(other.v3);
+      } else if (v2.equals(other.v3)) {
+        return v3.equals(other.v2);
+      } else return false;
+    } else if (v1.equals(other.v2)) {
+      if (v2.equals(other.v1)) {
+        return v3.equals(other.v3);
+      } else if (v2.equals(other.v3)) {
+        return v3.equals(other.v1);
+      } else return false;
+    } else if (v1.equals(other.v3)) {
+      if (v2.equals(other.v1)) {
+        return v3.equals(other.v2);
+      } else if (v2.equals(other.v2)) {
+        return v3.equals(other.v1);
+      } else return false;
+    } else return false;
+  }
 }
